@@ -1,6 +1,8 @@
 * {
   padding: 0%;
   margin: 0%;
+  font-family: "Baskerville", "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+  ;
 }
 body {
   background-color: #0047ab;
@@ -20,26 +22,65 @@ body {
 }
 #img {
   height: 10%;
+
   width: 20%;
+  min-width: 18%;
   z-index: 1000;
 }
-.loginpage {
+.main2 {
   height: calc(100% - 35vh);
   width: 80vw;
   margin-top: 5%;
   margin-left: 4%;
   margin-right: 4%;
-  background: rgba(159, 159, 159, 0.4);
+  background: transparent;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4.4px);
   -webkit-backdrop-filter: blur(4.4px);
   border: 1px solid rgba(255, 255, 255, 0.83);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login {
+  width: 40vw;
+  height: 85vh;
+  padding: 20px;
+  background: rgba(159, 159, 159);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.4px);
+  -webkit-backdrop-filter: blur(4.4px);
+  border: 1px solid rgba(255, 255, 255, 0.83);
+  display: block;
+}
+
+.login h1 {
+  font-size: 36px;
+  margin-bottom: 25px;
+}
+
+.login form {
+  font-size: 20px;
+}
+
+.login form .form-group {
+  margin-bottom: 12px;
+}
+
+.login form input[type="submit"] {
+  font-size: 20px;
+  margin-top: 15px;
+}
+.btn{
+  background-color:#0047ab
+  
 }
 
 a {
   text-decoration: none;
-  color: inherit;
+  color:  rgb(104, 104, 104);
 }
 
 ul,
@@ -156,7 +197,7 @@ li {
 }
 
 #drop-down-cbox:checked + label span {
-  background-color: white;
+  background-color: rgb(173, 173, 173);
 }
 
 /* Transform the bars into an 'X' */
@@ -215,7 +256,8 @@ li {
 
 .main-nav li > ul li a,
 .main-nav li > ul li span {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
+   
 }
 
 .main-nav li > ul li a:hover,
@@ -223,6 +265,7 @@ li {
   background-color: #666;
   color: white;
   border-bottom: none;
+  
 }
 
 /* Tablet and Mobile View */
@@ -294,13 +337,24 @@ li {
     width: 40%;
   }
 }
-
+@media (max-width : 1607px) {
+  .login{
+    position: absolute;
+    top: 10%;
+    width: 90%;
+  }
+  .login p{
+    font-size: 10vw;
+    position: absolute;
+    left: 30%;
+  }
+}
+/* this is for dark and light mode*/
 .switch {
   position: absolute;
   margin-top: 10px;
-  height: 5.5vh;
-  min-height: 3vh;
-  min-width: 30px;
+  height: 38px;
+
   width: 70px;
   right: 6%;
   top: 10%;
