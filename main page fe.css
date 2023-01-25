@@ -87,6 +87,9 @@ ul,
 li {
   list-style: none;
 }
+ul{
+  padding: 0%;
+}
 
 /* --- Clearfix for floated Elements --- */
 
@@ -247,6 +250,7 @@ li {
   max-height: 0px; /* max-height instead of height, height can't transition to auto */
   transition: all 500ms ease-in-out;
   overflow: hidden; /* make it so nav doesn't show beyond the 0px max-height */
+  width: 100%;
 }
 
 .main-nav li:hover > ul {
