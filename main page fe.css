@@ -4,12 +4,13 @@
   font-family: "Baskerville", "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
   ;
 }
-body {
+body  {
   background-color: #0047ab;
   display: flex;
   align-items: center;
   justify-content: center;
   display: flexbox;
+  transition-duration: 1s;
 }
 .main {
   margin-top: 10vh;
@@ -19,10 +20,10 @@ body {
   border-top-right-radius: 20px;
   background: linear-gradient(145deg, #e1e1e1, #f9f7f7);
   display: block;
+  transition-duration: 4s;
 }
 #img {
   height: 10%;
-
   width: 20%;
   min-width: 18%;
   z-index: 1000;
@@ -44,16 +45,19 @@ body {
   justify-content: center;
 }
 .login {
+  position: absolute;
+  top: 10%;
   width: 40vw;
   height: 85vh;
   padding: 20px;
-  background: rgba(159, 159, 159);
-  border-radius: 16px;
+  background: rgb(255, 255, 255);
+  border-radius: 40px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4.4px);
   -webkit-backdrop-filter: blur(4.4px);
-  border: 1px solid rgba(255, 255, 255, 0.83);
+  border: 1px solid rgba(255, 255, 255);
   display: block;
+  transition-duration: 0.5s;
 }
 
 .login h1 {
@@ -82,6 +86,7 @@ a {
   text-decoration: none;
   color:  rgb(104, 104, 104);
 }
+
 
 ul,
 li {
@@ -294,8 +299,9 @@ ul{
     left: 0;
     width: 100%;
     flex-direction: column;
-    background-color: rgb(221, 221, 221);
+    background-color: white;
     transition: all 500ms ease-in-out;
+    color: white;
   }
 
   #drop-down-cbox:checked ~ .main-nav {
@@ -340,11 +346,14 @@ ul{
     height: 10%;
     width: 40%;
   }
+  
 }
-@media (max-width : 1607px) {
+
+
+@media (max-width : 1300px) {
   .login{
     position: absolute;
-    top: 10%;
+    top: 5%;
     width: 90%;
   }
   .login p{
@@ -353,6 +362,15 @@ ul{
     left: 30%;
   }
 }
+ @media (min-width:768px) {
+ #phonelist{
+  background-color: transparent;
+ }
+
+ 
+}
+
+
 /* this is for dark and light mode*/
 .switch {
   position: absolute;
@@ -368,4 +386,23 @@ ul{
 }
 #circle {
   transition-duration: 0.7s;
+}
+.btn-success:hover{color:#fff;background-color:#0047ab;border-color:#0047ab}
+.main-nav li a:hover {
+  color: #575757;
+}
+.main2 p{
+  font-size: 40px;
+  position: absolute;
+  top: 5%;
+  transition-duration: 2s;
+  
+}
+.main2 img{
+  height: 70vh;
+  width: 50vw;
+  position: absolute;
+  left: auto;
+  top: 15%;
+  display: none;
 }

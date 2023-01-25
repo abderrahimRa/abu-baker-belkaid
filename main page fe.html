@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="main page fe.css" />
     <script src="main page fe.js"></script>
   </head>
-  <body>
+  <body id="body">
     <div class="main" id="main">
       <div class="switch"></div>
       <nav class="nav-bar">
@@ -22,17 +22,18 @@
           </label>
 
           <ul class="main-nav small-caps" id="phonelist">
-            <li id="first"><a href="#">Home</a></li>
-            <li id="second"><a href="#" onclick="logindisplay()">LOGIN</a></li>
+            <li ><a id="first" href="#" onclick="">Home</a></li>
+            <li ><a id="second" href="#" onclick="logindisplay()">LOGIN</a></li>
             <li>
-              <span id="third">List of app</span>
+              <span id="third" onclick="">List of app</span>
               <ul>
                 <li><a href="#">Codepen</a></li>
                 <li><a href="">Behance</a></li>
                 <li><a href="#">Github</a></li>
               </ul>
             </li>
-            <li id="forth"><a href="#">INFO</a></li>
+            <li ><a id="forth" href="#" onmouseover="info()" onmouseout="info2()">INFO</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -40,8 +41,10 @@
       <img id="img" src="logo-en-removebg-preview.png" alt="" />
       <div id="design">
         <div class="main2">
+          <p style="display: none;" id="info">This website was created by ICEM team</p>
+          <img  id="image" src="300180172_602199551596794_398959430443796787_n.png" alt="">
           <div class="login" id="login">
-
+            
             <h1 class="text-center">Hello Again!</h1>
     
             <form class="needs-validation">
@@ -63,7 +66,7 @@
                     <input class="form-check-input" type="checkbox" id="check">
                     <label class="form-check-label" for="check">Remember me</label>
                 </div>
-                <input class="btn btn-success w-100" type="submit" value="SIGN IN">
+                <input class="btn btn-success w-100" type="submit" value="SIGN IN" id="btn">
             </form>
     
         </div>
